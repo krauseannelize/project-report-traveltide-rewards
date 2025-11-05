@@ -2,6 +2,18 @@
 
 This database contains customer, session, flight, and hotel booking information from **TravelTide**, an online travel startup. It enables exploration of how travelers search, book, and combine flights and hotels, revealing patterns in discount sensitivity, cancellation behavior, baggage needs, and trip length.
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Database Schema](#database-schema)
+3. [Table Descriptions](#table-descriptions)  
+   - [Table: `flights`](#table-flights)  
+   - [Table: `hotels`](#table-hotels)  
+   - [Table: `sessions`](#table-sessions)  
+   - [Table: `users`](#table-users)  
+
+---
+
 ## Overview
 
 | Key | Value |
@@ -9,10 +21,21 @@ This database contains customer, session, flight, and hotel booking information 
 | **Total Tables** | 4 (`users`, `sessions`, `flights`, `hotels`) |
 | **Data Source** | Provided by Masterschool |
 | **Primary Use Cases** | Data Cleaning, Feature Engineering, Customer Segmentation, Business Strategy, Visualization & Reporting |
+| **Database Access** | `postgres://Test:bQNxVzJL4g6u@ep-noisy-flower-846766.us-east-2.aws.neon.tech/TravelTide?sslmode=require` |
 
 ---
 
-## Table: `flights`
+## Database Schema
+
+![TravelTide Database Schema](/data/traveltide-db-schema.png)
+
+*Entity‑relationship diagram showing the four tables (`users`, `sessions`, `flights`, `hotels`) and their relationships.*
+
+---
+
+## Table Descriptions
+
+### Table: `flights`
 
 | Key | Value |
 | --- | --- |
@@ -42,7 +65,7 @@ The following columns capture details of each booked flight, including origin, d
 
 ---
 
-## Table: `hotels`
+### Table: `hotels`
 
 | Key | Value |
 | --- | --- |
@@ -66,7 +89,7 @@ The following columns capture details of each booked hotel stay, including brand
 
 ---
 
-## Table: `sessions`
+### Table: `sessions`
 
 | Key | Value |
 | --- | --- |
@@ -97,7 +120,7 @@ The following columns capture details of each browsing session, including timing
 
 ---
 
-## Table: `users`
+### Table: `users`
 
 | Key | Value |
 | --- | --- |
