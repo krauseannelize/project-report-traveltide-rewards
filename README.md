@@ -8,6 +8,8 @@ Comprehensive analysis of customer sessions, flights, and hotels to uncover beha
 
 ## Quick Access
 
+- [Metadata Sheet](/data/traveltide-db-metadata.md)
+
 🚧 Work in progress
 
 ## Project Overview
